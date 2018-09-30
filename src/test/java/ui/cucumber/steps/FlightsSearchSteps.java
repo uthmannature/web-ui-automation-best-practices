@@ -45,7 +45,7 @@ public class FlightsSearchSteps {
         theActorInTheSpotlight().attemptsTo(SearchFlights.betweenCountries(City.fromString(from),City.fromString(to)));
     }
 
-    @Then("^(?:he|she) should find some flights$")
+    @Then("^(?:he|she) should find a flights$")
     public void should_find_some_flights() throws Throwable {
         theActorInTheSpotlight().should(
                 seeThat(
